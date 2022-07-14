@@ -1,0 +1,654 @@
+body, p, h1, h2, h3, a, ul, li, dd, dt{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+:root{
+    --w: #FFFFFF;
+    --color1: #F7F7F7;
+    --color2: #EDEDED;
+    --color3: #DEDEDE;
+    --color4: #CCCCCC;
+    --color5: #B2B2B2;
+    --color6: #9C9C9C;
+    --color7: #717171;
+    --color8: #595959;
+    --color9: #404040;
+    --color10: #2E2E2E;
+    --color11: #111111;
+    --color12: #000000;
+    --p1: #FFBB00;
+    --p2: #E4A30B;
+    --p3: #A66F00;
+    --p4: #664400;
+    --p5: #332200;
+}
+
+/* INICIO DO HEADER*/
+.header-bg{
+    background-color: var(--color12);
+    
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.lista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    list-style: none;
+}
+
+.lista a{
+    color: var(--w);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-bottom: 5px ;
+    border-bottom: 2px solid black;
+    transition-delay: 0.25s;
+}
+
+.lista a:hover{
+        border-bottom: 2px solid #FFFFFF;
+        
+}
+/* FIM HEADER */
+
+
+/* GRID INTRO */
+.main{
+    background-color: var(--color11);
+    color: white;
+    margin: 0 auto;
+    box-shadow: inset 0px -120px white;
+    background-color: var(--color12);
+}
+
+/* NIMBUS HOME */
+.nimbus-home{
+    border-radius: 5px;
+    object-fit: cover;
+    height: 100%;
+    
+}
+/*  GRID MAIN */
+.main-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    
+    margin-bottom: 120px;
+    gap: 0px 32px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    
+}
+
+/* TEXTO ESQUERDA */
+.main-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 16px;
+}
+/* TITULO*/
+.main-texto h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    margin-bottom: 32px;
+}
+/* PARÁGRAFO*/
+.main-texto p{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+margin-bottom: 20px;
+color: #B2B2B2;
+}
+ /* BOTÃO*/
+.main-texto a{
+    text-decoration: none;
+    padding: 20px 12px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #332200;
+    text-align: center;
+    width: 217px;
+    background: linear-gradient(180deg, #FFBF00 0%, #F2A50C 100%);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+/* FIM MAIN */
+
+span{
+    color: #FFBB00;
+}
+
+
+/* GALERIA */
+.article{
+    margin-bottom: 120px;
+}
+.escolha{
+    
+    width: 1460px;
+    box-sizing: border-box;
+    padding: 0px 70px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+/* ESCOLHA A SUA*/
+.article h1{
+    margin-left: 360px;
+    color: #111111;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    margin-bottom: 40px;
+}
+
+/* IMAGENS */
+.magic, .nimbus, .nebula, img{
+    margin-bottom: 16px;
+    border-radius: 5px;
+}
+
+/* NOME E PREÇO */
+.nome-bike{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #111111;
+    margin-left: 18px;
+    position: relative;
+}
+
+.preco{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #595959;
+    margin-left: 18px;
+}
+
+/* DETALHE */
+
+.nome-bike::before{
+     content: "";
+     width: 12px;
+     height: 8px;
+     background-color: #FFBB00;
+     position: absolute;
+     left: -16px;
+     top: 16px;
+}
+
+/* TECNOLOGIA */
+
+.section{
+    background-color: #000000;
+    color: #A66F00;
+    box-shadow: inset 0px 110px #FFFFFF,inset 0px -110px #FFFFFF;
+    
+    height: 1280px;
+    margin-bottom: 120px;
+    
+}
+.img-tec{
+    height: 100%;
+    
+}
+.img-tec img{
+    height: 100%;
+    
+}
+.tecnologia{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    height: 100%;
+    width: 1200px;
+    gap: 0px 32px;
+    box-sizing: border-box;
+    height: 100%;
+    
+
+}
+
+.tecnologia-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 180px;
+}
+
+.tecnologia-flex h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+
+/* PARAGRÁFOS*/
+
+
+.para1{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0.015em;
+text-transform: uppercase;
+color: #B2B2B2;
+margin-bottom: 20px;
+}
+
+
+.para2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #B2B2B2;
+    margin-bottom: 20px;
+}
+
+
+.tecnologia h2{
+     font-family: 'Poppins';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 24px;
+     line-height: 36px;
+     color: #FFBB00;
+     padding: 4px 0px;
+     border-bottom: 4px solid #FFBB00;
+     max-width: max-content;
+     margin-bottom: 0px;
+}
+
+
+
+
+.eletrica-rastreador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+.outro-paragráfo{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #B2B2B2;
+}
+
+.atributo{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+/* PARCEIROS */
+
+.section2{
+    display:grid;
+    grid-template-columns: 1/2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0 auto;
+    height: 100%;
+    width: 1400px;
+    box-sizing: border-box;
+    height: 100%;
+    margin-bottom: 120px;
+    
+}
+
+.parceiros{
+    display: flex;
+
+}
+
+.primeiro-parceiro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    grid-column: 1/3;
+    grid-row: 2;
+    position: relative;
+    
+}
+
+/* LINHAS DETALHES */
+.primeiro-parceiro::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #EDEDED;
+    top: 130px;
+}
+
+.primeiro-parceiro::before{
+    content: "";
+    width: 2px;
+    height: 200%;
+    position: absolute;
+    background-color: #EDEDED;
+    top: 10px;
+    left: 350px;
+}
+
+.segundo-parceiro::after{
+    content: "";
+    width: 2px;
+    height: 200%;
+    position: absolute;
+    background-color: #EDEDED;
+    top: -120px;
+    left: 700px;
+}
+.segundo-parceiro::before{
+    content: "";
+    width: 2px;
+    height: 200%;
+    position: absolute;
+    background-color: #EDEDED;
+    top: -120px;
+    left: 1050px;
+}
+.segundo-parceiro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 1/3;
+    grid-row: 3;
+    position: relative;
+}
+
+.section2 h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: #111111;
+    text-align: start;
+    margin-left: 120px;
+    margin-bottom: 60px;
+}
+
+
+.depo-grid{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    height: 498px;
+    
+    background-color: #FFBB00;
+   
+    
+}
+
+
+.depo-img{
+    display: block;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.depo-texto{
+    padding-top: 250px;
+    padding-left: 50px;
+    
+font-family: 'Merriweather';
+font-style: italic;
+font-weight: 900;
+font-size: 18px;
+line-height: 28px;
+color: #332200;
+   
+}
+
+
+/* SEGUROS */
+.section3{
+    background-color: #111111;
+    
+   
+}
+
+
+.seguro-grid h1{
+    padding-top: 60px;
+    margin-bottom: 100px;
+    grid-column: 1/3;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: #FFFFFF;
+}
+
+/* PRATA E OURO */
+.seguro-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    gap: 40px;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    box-sizing: border-box;
+} 
+
+
+
+/* CONTAINER PRATA E OURO */
+.prata {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #000000;
+    padding: 30px 40px;
+    border-radius: 6px;
+    
+}
+.ouro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #000000;
+    padding: 30px 40px;
+    border-radius: 6px;
+}
+
+/* FIM CONTAINER PRATA E OURO */
+
+/* PREÇO E TÍTULOS */
+
+.seguro-preço{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* TÍTULOS */
+#prata{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 48px;
+color: #9C9C9C;
+}
+
+#ouro{
+    
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 48px;
+color: #FFBB00;
+}
+
+/* FIM PREÇO E TÍTULOS */
+.prata-atributos p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.ouro-atributos p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    position: relative;}
+/* DETALHE LISTA */
+.prata-atributos p::before{
+    content: "";
+    width: 11px;
+    height: 12px;
+    background-image: url(/img/icones/lista.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 7px;
+    left: -16px;
+}
+
+.ouro-atributos  p::before{
+    content: "";
+    width: 11px;
+    height: 12px;
+    background-image: url(/img/icones/lista.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 7px;
+    left: -16px;
+}
+/* DETALHE LISTA */
+
+.seguro-preço p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+/* BOTÕES */
+
+.prata-atributos a{
+    padding: 16px 32px;
+    display: block;
+    width: 155px;
+    text-align: center;
+    text-decoration: none;
+    background: #2E2E2E;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #CCCCCC;
+    
+}
+
+.ouro-atributos a{
+    padding: 16px 32px;
+    display: block;
+    width: 155px;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(180deg, #FFBF00 0%, #F2A50C 100%);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #332200;
+
+}
+
+/* FIM BOTÕES */
+
+
+
+
+/*  >>>>    B I C I C L E T A S    <<<<    */
